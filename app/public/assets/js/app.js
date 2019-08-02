@@ -1,3 +1,5 @@
+
+
 $(function () {
     $(".devouredTrue").on("click", function (event) {
         var id = $(this).data("id");
@@ -17,11 +19,17 @@ $(function () {
     });
 
     $("#addburger").on("click", function (event) {
+        
+var userInput = $("#burgerNameInput").val().trim();
 
+        if(userInput===""){
+            alert("Please input a burger name");
+            return false
+        } else{
         event.preventDefault();
 
         var newBurger = {
-            name: $("#burgerNameInput").val().trim(),
+            name: userInput,
             devoured: false
         };
 
@@ -34,8 +42,10 @@ $(function () {
 
                 location.reload();
             }
+        
         );
+    }
     });
 
-    
+
 });

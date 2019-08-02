@@ -1,10 +1,11 @@
 {
   "name": "Burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "Use this app to see what burgers are avalible to be eaten! A list of avalible burgers is dynamically created on the left side using data from a table in MySQL. Each burger has a button that when clicked will move the burger to the right side and mark it as \"Devoured\".The user can create a burger name and add it to the list. The table in MySQL is also updated to reflect the same data as the app. \r # Tools:\r - Handlebars\r - Node.JS\r - JSON\r - Express\r - Express Path\r - Bootstrap\r - CSS\r - Background from V. Boltneva @ Pexel.com\r # Author\r Adriana (Adi) Cepela - github - acepela5\r ## Deployed Link",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,6 @@
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.1.2",
     "mysql": "^2.17.1"
-  }
+  },
+  "devDependencies": {}
 }
